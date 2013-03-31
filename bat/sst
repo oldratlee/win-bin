@@ -1,0 +1,9 @@
+#!/bin/bash
+
+export TZ=
+
+[ $# == 0 ] && files=( "." ) || files=( "$@" )
+for file in "${files[@]}" ; do
+	p=`cygpath -aw "$file"`
+	cmd /C "C:\Program^ Files\TortoiseSVN\bin\TortoiseProc.exe /command:repostatus /path:$p" &
+done

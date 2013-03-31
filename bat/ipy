@@ -1,0 +1,2 @@
+#!/bin/sh
+'/cygdrive/d/ProgFile/Toolkits/Python27/Scripts/ipython.exe' "$@"

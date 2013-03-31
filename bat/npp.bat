@@ -1,0 +1,1 @@
+@start "dummy" D:\ProgFile\Toolkits\npp\notepad++.exe %*

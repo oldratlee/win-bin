@@ -1,0 +1,11 @@
+#!/bin/bash
+
+export TZ=
+
+[ $# == 0 ] && files=( "." ) || files=( "$@" )
+for file in "${files[@]}" ; do
+	file=`cygpath -ua $file`
+	[ ! -d "$file" ] && file=`dirname "$file"`
+	cd $file
+	cmd /C 'C:\Program^ Files\TortoiseGit\bin\TortoiseGitProc.exe /command:log' &
+done

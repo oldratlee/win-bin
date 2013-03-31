@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for file ; do
+	f=`cygpath -aw "$file"`
+	/d/ProgFile/Toolkits/npp/notepad++.exe "$f"
+done

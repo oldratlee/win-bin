@@ -1,0 +1,1 @@
+@D:\ProgFile\Toolkits\vim73\vim.exe %*

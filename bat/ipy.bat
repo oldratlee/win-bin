@@ -1,0 +1,1 @@
+@D:\ProgFile\Toolkits\Python27\Scripts\ipython.exe %*

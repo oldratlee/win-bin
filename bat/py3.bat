@@ -1,0 +1,1 @@
+@D:\ProgFile\Toolkits\Python3\python.exe %*
