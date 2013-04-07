@@ -1,0 +1,3 @@
+#!/bin/bash
+mvn install -Dmaven.test.skip -Dautoconf.skip -Dautoconfig.skip -Dmaven.javadoc.skip
+
