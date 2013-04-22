@@ -1,0 +1,13 @@
+#!/bin/bash
+
+BIN=/cygdrive/d/ProgFile/Toolkits/npp/notepad++.exe
+
+if [ $# -eq 0 ] ; then 
+	"$BIN" &
+	exit $?
+fi
+
+for file ; do
+	f=`cygpath -aw "$file"`
+	"$BIN" "$f" &
+done
