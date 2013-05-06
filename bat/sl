@@ -8,6 +8,10 @@ if [ $# -eq 0 ] ; then
 fi
 
 for file ; do
+	[ ! -e $file ] && { echo "$file not exsited!"; continue; }
+
 	f=`cygpath -aw "$file"`
 	"$BIN" "$f" &
+
+	echo "$file opened!"
 done
